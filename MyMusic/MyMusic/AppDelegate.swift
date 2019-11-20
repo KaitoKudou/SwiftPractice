@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  MyMusic
 //
-//  Created by KaitoKudou on 2019/11/17.
-//  Copyright © 2019 KaitoKudou. All rights reserved.
+//  Created by Swift-Beginners on 2019/08/23.
+//  Copyright © 2019 Swift-Beginners. All rights reserved.
 //
 
 import UIKit

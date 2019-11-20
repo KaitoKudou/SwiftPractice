@@ -7,33 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C62F519E23805DDB00E0252F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62F519D23805DDB00E0252F /* AppDelegate.swift */; };
-		C62F51A023805DDB00E0252F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62F519F23805DDB00E0252F /* SceneDelegate.swift */; };
-		C62F51A223805DDB00E0252F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62F51A123805DDB00E0252F /* ViewController.swift */; };
-		C62F51A523805DDB00E0252F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62F51A323805DDB00E0252F /* Main.storyboard */; };
-		C62F51A723805DDD00E0252F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C62F51A623805DDD00E0252F /* Assets.xcassets */; };
-		C62F51AA23805DDD00E0252F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62F51A823805DDD00E0252F /* LaunchScreen.storyboard */; };
-		C62F51BA2382E1DD00E0252F /* backmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C62F51B12382E19600E0252F /* backmusic.mp3 */; };
-		C62F51BB2382E1DD00E0252F /* cymbal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C62F51B32382E1A700E0252F /* cymbal.mp3 */; };
-		C62F51BC2382E1DD00E0252F /* guitar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C62F51B52382E1B100E0252F /* guitar.mp3 */; };
+		82BC45D9230EEA4300E1178B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BC45D8230EEA4300E1178B /* AppDelegate.swift */; };
+		82BC45DB230EEA4300E1178B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BC45DA230EEA4300E1178B /* SceneDelegate.swift */; };
+		82BC45DD230EEA4300E1178B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BC45DC230EEA4300E1178B /* ViewController.swift */; };
+		82BC45E0230EEA4300E1178B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82BC45DE230EEA4300E1178B /* Main.storyboard */; };
+		82BC45E2230EEA4400E1178B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82BC45E1230EEA4400E1178B /* Assets.xcassets */; };
+		82BC45E5230EEA4400E1178B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82BC45E3230EEA4400E1178B /* LaunchScreen.storyboard */; };
+		82BC45EF230EF83200E1178B /* backmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 82BC45EC230EF83200E1178B /* backmusic.mp3 */; };
+		82BC45F0230EF83200E1178B /* cymbal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 82BC45ED230EF83200E1178B /* cymbal.mp3 */; };
+		82BC45F1230EF83200E1178B /* guitar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 82BC45EE230EF83200E1178B /* guitar.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C62F519A23805DDB00E0252F /* MyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C62F519D23805DDB00E0252F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C62F519F23805DDB00E0252F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C62F51A123805DDB00E0252F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C62F51A423805DDB00E0252F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C62F51A623805DDD00E0252F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C62F51A923805DDD00E0252F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C62F51AB23805DDD00E0252F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C62F51B12382E19600E0252F /* backmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backmusic.mp3; sourceTree = "<group>"; };
-		C62F51B32382E1A700E0252F /* cymbal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cymbal.mp3; sourceTree = "<group>"; };
-		C62F51B52382E1B100E0252F /* guitar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = guitar.mp3; sourceTree = "<group>"; };
+		82BC45D5230EEA4300E1178B /* MyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82BC45D8230EEA4300E1178B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		82BC45DA230EEA4300E1178B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		82BC45DC230EEA4300E1178B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		82BC45DF230EEA4300E1178B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		82BC45E1230EEA4400E1178B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82BC45E4230EEA4400E1178B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82BC45E6230EEA4400E1178B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82BC45EC230EF83200E1178B /* backmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backmusic.mp3; sourceTree = "<group>"; };
+		82BC45ED230EF83200E1178B /* cymbal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cymbal.mp3; sourceTree = "<group>"; };
+		82BC45EE230EF83200E1178B /* guitar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = guitar.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C62F519723805DDB00E0252F /* Frameworks */ = {
+		82BC45D2230EEA4300E1178B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,35 +43,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C62F519123805DDB00E0252F = {
+		82BC45CC230EEA4300E1178B = {
 			isa = PBXGroup;
 			children = (
-				C62F519C23805DDB00E0252F /* MyMusic */,
-				C62F519B23805DDB00E0252F /* Products */,
+				82BC45D7230EEA4300E1178B /* MyMusic */,
+				82BC45D6230EEA4300E1178B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C62F519B23805DDB00E0252F /* Products */ = {
+		82BC45D6230EEA4300E1178B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C62F519A23805DDB00E0252F /* MyMusic.app */,
+				82BC45D5230EEA4300E1178B /* MyMusic.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C62F519C23805DDB00E0252F /* MyMusic */ = {
+		82BC45D7230EEA4300E1178B /* MyMusic */ = {
 			isa = PBXGroup;
 			children = (
-				C62F519D23805DDB00E0252F /* AppDelegate.swift */,
-				C62F519F23805DDB00E0252F /* SceneDelegate.swift */,
-				C62F51A123805DDB00E0252F /* ViewController.swift */,
-				C62F51A323805DDB00E0252F /* Main.storyboard */,
-				C62F51A623805DDD00E0252F /* Assets.xcassets */,
-				C62F51A823805DDD00E0252F /* LaunchScreen.storyboard */,
-				C62F51AB23805DDD00E0252F /* Info.plist */,
-				C62F51B12382E19600E0252F /* backmusic.mp3 */,
-				C62F51B32382E1A700E0252F /* cymbal.mp3 */,
-				C62F51B52382E1B100E0252F /* guitar.mp3 */,
+				82BC45D8230EEA4300E1178B /* AppDelegate.swift */,
+				82BC45DA230EEA4300E1178B /* SceneDelegate.swift */,
+				82BC45DC230EEA4300E1178B /* ViewController.swift */,
+				82BC45DE230EEA4300E1178B /* Main.storyboard */,
+				82BC45E1230EEA4400E1178B /* Assets.xcassets */,
+				82BC45E3230EEA4400E1178B /* LaunchScreen.storyboard */,
+				82BC45E6230EEA4400E1178B /* Info.plist */,
+				82BC45EC230EF83200E1178B /* backmusic.mp3 */,
+				82BC45ED230EF83200E1178B /* cymbal.mp3 */,
+				82BC45EE230EF83200E1178B /* guitar.mp3 */,
 			);
 			path = MyMusic;
 			sourceTree = "<group>";
@@ -79,13 +79,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C62F519923805DDB00E0252F /* MyMusic */ = {
+		82BC45D4230EEA4300E1178B /* MyMusic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C62F51AE23805DDD00E0252F /* Build configuration list for PBXNativeTarget "MyMusic" */;
+			buildConfigurationList = 82BC45E9230EEA4400E1178B /* Build configuration list for PBXNativeTarget "MyMusic" */;
 			buildPhases = (
-				C62F519623805DDB00E0252F /* Sources */,
-				C62F519723805DDB00E0252F /* Frameworks */,
-				C62F519823805DDB00E0252F /* Resources */,
+				82BC45D1230EEA4300E1178B /* Sources */,
+				82BC45D2230EEA4300E1178B /* Frameworks */,
+				82BC45D3230EEA4300E1178B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -93,25 +93,25 @@
 			);
 			name = MyMusic;
 			productName = MyMusic;
-			productReference = C62F519A23805DDB00E0252F /* MyMusic.app */;
+			productReference = 82BC45D5230EEA4300E1178B /* MyMusic.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C62F519223805DDB00E0252F /* Project object */ = {
+		82BC45CD230EEA4300E1178B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1110;
-				LastUpgradeCheck = 1110;
-				ORGANIZATIONNAME = KaitoKudou;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Swift-Beginners";
 				TargetAttributes = {
-					C62F519923805DDB00E0252F = {
-						CreatedOnToolsVersion = 11.1;
+					82BC45D4230EEA4300E1178B = {
+						CreatedOnToolsVersion = 11.0;
 					};
 				};
 			};
-			buildConfigurationList = C62F519523805DDB00E0252F /* Build configuration list for PBXProject "MyMusic" */;
+			buildConfigurationList = 82BC45D0230EEA4300E1178B /* Build configuration list for PBXProject "MyMusic" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,58 +119,58 @@
 				en,
 				Base,
 			);
-			mainGroup = C62F519123805DDB00E0252F;
-			productRefGroup = C62F519B23805DDB00E0252F /* Products */;
+			mainGroup = 82BC45CC230EEA4300E1178B;
+			productRefGroup = 82BC45D6230EEA4300E1178B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C62F519923805DDB00E0252F /* MyMusic */,
+				82BC45D4230EEA4300E1178B /* MyMusic */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C62F519823805DDB00E0252F /* Resources */ = {
+		82BC45D3230EEA4300E1178B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C62F51AA23805DDD00E0252F /* LaunchScreen.storyboard in Resources */,
-				C62F51BB2382E1DD00E0252F /* cymbal.mp3 in Resources */,
-				C62F51BC2382E1DD00E0252F /* guitar.mp3 in Resources */,
-				C62F51BA2382E1DD00E0252F /* backmusic.mp3 in Resources */,
-				C62F51A723805DDD00E0252F /* Assets.xcassets in Resources */,
-				C62F51A523805DDB00E0252F /* Main.storyboard in Resources */,
+				82BC45E5230EEA4400E1178B /* LaunchScreen.storyboard in Resources */,
+				82BC45F0230EF83200E1178B /* cymbal.mp3 in Resources */,
+				82BC45F1230EF83200E1178B /* guitar.mp3 in Resources */,
+				82BC45EF230EF83200E1178B /* backmusic.mp3 in Resources */,
+				82BC45E2230EEA4400E1178B /* Assets.xcassets in Resources */,
+				82BC45E0230EEA4300E1178B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C62F519623805DDB00E0252F /* Sources */ = {
+		82BC45D1230EEA4300E1178B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C62F51A223805DDB00E0252F /* ViewController.swift in Sources */,
-				C62F519E23805DDB00E0252F /* AppDelegate.swift in Sources */,
-				C62F51A023805DDB00E0252F /* SceneDelegate.swift in Sources */,
+				82BC45DD230EEA4300E1178B /* ViewController.swift in Sources */,
+				82BC45D9230EEA4300E1178B /* AppDelegate.swift in Sources */,
+				82BC45DB230EEA4300E1178B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C62F51A323805DDB00E0252F /* Main.storyboard */ = {
+		82BC45DE230EEA4300E1178B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C62F51A423805DDB00E0252F /* Base */,
+				82BC45DF230EEA4300E1178B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		C62F51A823805DDD00E0252F /* LaunchScreen.storyboard */ = {
+		82BC45E3230EEA4400E1178B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C62F51A923805DDD00E0252F /* Base */,
+				82BC45E4230EEA4400E1178B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -178,7 +178,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C62F51AC23805DDD00E0252F /* Debug */ = {
+		82BC45E7230EEA4400E1178B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -228,7 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -238,7 +238,7 @@
 			};
 			name = Debug;
 		};
-		C62F51AD23805DDD00E0252F /* Release */ = {
+		82BC45E8230EEA4400E1178B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -292,36 +292,34 @@
 			};
 			name = Release;
 		};
-		C62F51AF23805DDD00E0252F /* Debug */ = {
+		82BC45EA230EEA4400E1178B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DX3FKMWYLL;
 				INFOPLIST_FILE = MyMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.icloud-kaitokudou2468110921.MyMusic";
+				PRODUCT_BUNDLE_IDENTIFIER = "Swift-Beginners.MyMusic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		C62F51B023805DDD00E0252F /* Release */ = {
+		82BC45EB230EEA4400E1178B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DX3FKMWYLL;
 				INFOPLIST_FILE = MyMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.icloud-kaitokudou2468110921.MyMusic";
+				PRODUCT_BUNDLE_IDENTIFIER = "Swift-Beginners.MyMusic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,25 +329,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C62F519523805DDB00E0252F /* Build configuration list for PBXProject "MyMusic" */ = {
+		82BC45D0230EEA4300E1178B /* Build configuration list for PBXProject "MyMusic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C62F51AC23805DDD00E0252F /* Debug */,
-				C62F51AD23805DDD00E0252F /* Release */,
+				82BC45E7230EEA4400E1178B /* Debug */,
+				82BC45E8230EEA4400E1178B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C62F51AE23805DDD00E0252F /* Build configuration list for PBXNativeTarget "MyMusic" */ = {
+		82BC45E9230EEA4400E1178B /* Build configuration list for PBXNativeTarget "MyMusic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C62F51AF23805DDD00E0252F /* Debug */,
-				C62F51B023805DDD00E0252F /* Release */,
+				82BC45EA230EEA4400E1178B /* Debug */,
+				82BC45EB230EEA4400E1178B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C62F519223805DDB00E0252F /* Project object */;
+	rootObject = 82BC45CD230EEA4300E1178B /* Project object */;
 }
