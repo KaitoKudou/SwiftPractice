@@ -18,10 +18,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         // 画面表示前にTextFieldのdelegate通知先を設定
+        // デリゲートの通知先を自分自身に設定
         inputText.delegate = self
     }
     
     // delegateによってこのメソッドが実行される
+    // delegateメソッド
     // 「検索」ボタンが押されると呼ばれる
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
@@ -75,6 +77,34 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         return true
     }
+    
+    @IBAction func changeMapButton(_ sender: Any) {
+        
+        // mapTypeプロパティの値で場合わけ
+        // 標準⇨航空写真⇨航空写真＋標準
+        // ⇨3D Flyover ⇨ 3D Flyover＋標準
+        // ⇨交通機関
+        
+        if dispMap.mapType == .standard{
+            dispMap.mapType = .satellite
+        }
+        else if dispMap.mapType == .satellite{
+            dispMap.mapType = .hybrid
+        }
+        else if dispMap.mapType == .hybrid{
+            dispMap.mapType = .satelliteFlyover
+        }
+        else if dispMap.mapType == .satelliteFlyover{
+            dispMap.mapType = .hybridFlyover
+        }
+        else if dispMap.mapType == .hybridFlyover{
+            dispMap.mapType = .mutedStandard
+        }
+        else{
+            dispMap.mapType = .standard
+        }
+    }
+    
 }
         
 

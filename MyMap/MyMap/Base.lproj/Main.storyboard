@@ -26,12 +26,20 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Vud-hy-8NU">
                                 <rect key="frame" x="0.0" y="78" width="414" height="784"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ie4-G3-pAW">
+                                <rect key="frame" x="373" y="830" width="25" height="24"/>
+                                <connections>
+                                    <action selector="changeMapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wrb-VQ-a3u"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="FRm-Py-eEd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1iW-Wa-mNw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vud-hy-8NU" secondAttribute="trailing" id="3ov-7a-2a1"/>
                             <constraint firstItem="Vud-hy-8NU" firstAttribute="top" secondItem="FRm-Py-eEd" secondAttribute="bottom" id="Nwo-Dc-PyP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ie4-G3-pAW" secondAttribute="bottom" constant="8" id="WoF-F0-6j6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ie4-G3-pAW" secondAttribute="trailing" constant="16" id="byO-bc-gPd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vud-hy-8NU" secondAttribute="bottom" id="cRb-6w-dHn"/>
                             <constraint firstItem="FRm-Py-eEd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fXd-5R-AGc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FRm-Py-eEd" secondAttribute="trailing" id="jcE-0s-Sa9"/>
