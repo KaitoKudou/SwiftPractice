@@ -85,7 +85,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // ⇨3D Flyover ⇨ 3D Flyover＋標準
         // ⇨交通機関
         
-        if dispMap.mapType == .standard{
+        /*if dispMap.mapType == .standard{
             dispMap.mapType = .satellite
         }
         else if dispMap.mapType == .satellite{
@@ -102,7 +102,25 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         else{
             dispMap.mapType = .standard
+        }*/
+        
+        switch dispMap.mapType {
+            
+        case .standard:
+                dispMap.mapType = .satellite
+        case .satellite:
+            dispMap.mapType = .hybrid
+        case .hybrid:
+            dispMap.mapType = .satelliteFlyover
+        case .satelliteFlyover:
+            dispMap.mapType = .hybridFlyover
+        case .hybridFlyover:
+            dispMap.mapType = .mutedStandard
+        default:
+            dispMap.mapType = .standard
         }
+        
+        
     }
     
 }
