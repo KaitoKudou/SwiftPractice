@@ -27,10 +27,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFS-dz-K7M">
                                 <rect key="frame" x="57" y="478" width="140" height="140"/>
                                 <state key="normal" image="btn_start"/>
+                                <connections>
+                                    <action selector="startButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5aT-qU-Jfa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DD-lA-Q6U">
                                 <rect key="frame" x="217" y="478" width="140" height="140"/>
                                 <state key="normal" image="btn_stop"/>
+                                <connections>
+                                    <action selector="stopButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rzg-qp-F59"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -49,9 +55,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="tIW-KZ-EJD">
-                        <barButtonItem key="rightBarButtonItem" title="秒数設定" id="eqp-vM-cSS"/>
+                        <barButtonItem key="rightBarButtonItem" title="秒数設定" id="eqp-vM-cSS">
+                            <connections>
+                                <action selector="settingButtonAction:" destination="BYZ-38-t0r" id="YZb-v8-Nsa"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="countDownLabel" destination="MrJ-bg-moJ" id="bmh-p9-BRy"/>
                         <segue destination="cLx-wl-wsL" kind="show" identifier="goSetting" id="MQd-Sl-y3G"/>
                     </connections>
                 </viewController>
@@ -73,6 +84,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBj-lc-aPm">
                                 <rect key="frame" x="147" y="488" width="120" height="120"/>
                                 <state key="normal" image="btn_ decision"/>
+                                <connections>
+                                    <action selector="decisionButtonAction:" destination="cLx-wl-wsL" eventType="touchUpInside" id="Gvp-HH-cdU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -86,6 +100,9 @@
                         <viewLayoutGuide key="safeArea" id="jvN-hx-LAZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="Bk9-Nc-Ne0"/>
+                    <connections>
+                        <outlet property="timerSettingPicker" destination="w1G-4m-k9T" id="RCQ-6d-h5z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="27R-fE-OeY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
