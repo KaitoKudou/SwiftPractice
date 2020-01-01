@@ -14,7 +14,10 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    // 次の画面に遷移する時に渡す画像を格納する変数
+    var captureImage : UIImage?
+    
     @IBOutlet weak var pictureImage: UIImageView!
     
     // 「カメラを起動する」をタップすると実行される
@@ -88,7 +91,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     
     // 「SNSに投稿する」をタップすると実行される
-    @IBAction func shareButtonAction(_ sender: Any) {
+    /*@IBAction func shareButtonAction(_ sender: Any) {
         
         // 表示画像をアンラップして、シェアする画像を取り出す
         if let shareImage = pictureImage.image {
@@ -106,17 +109,28 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             // UIActivityViewControllerを表示
             present(controller, animated: true, completion: nil)
         }
-    }
+    }*/
     
     // cameraでの撮影が終わった後に呼ばれるdelegateメソッド
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-        // 撮影した画像をpictureImageに渡す。
+        // 撮影した画像をcaptureImageに渡す。
         // info[]はAny型なので、UIImage型にキャストする必要がある。
-        pictureImage.image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+        captureImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
         
         // モーダルビューを閉じる (cameraを閉じる)
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: {
+            // エフェクト画面へ遷移
+            self.performSegue(withIdentifier: "showEffectView", sender: nil)
+        })
+    }
+    
+    // Segueを使って画面遷移時に実行されるメソッド
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // 次の画面のインスタンスを格納
+        if let nextViewController = segue.destination as? EffectViewController {
+            nextViewController.originalImage = captureImage
+        }
     }
 }
 

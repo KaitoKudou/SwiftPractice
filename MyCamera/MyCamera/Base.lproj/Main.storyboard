@@ -122,7 +122,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aRT-RZ-ZnY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="B9P-dJ-LA9"/>
                     <connections>
                         <outlet property="effectImage" destination="2yL-mm-Zat" id="GeX-WG-gI7"/>
                     </connections>
