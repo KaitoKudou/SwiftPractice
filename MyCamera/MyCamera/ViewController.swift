@@ -45,14 +45,35 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         // カメラかフォトライブラリどちらから画像を取得するか選択
         let alertController = UIAlertController(title: "確認", message: "選択してください", preferredStyle: .actionSheet)
         
-        // カメラを起動するための選択肢を定義
-        // UIAlertActionは選択肢を表示させるクラス
-        let cameraAction = UIAlertAction(title: "カメラ", style: .default, handler: nil)
-        alertController.addAction(cameraAction)
+        // カメラが利用可能かどうかチェック
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            // カメラを起動するための選択肢を定義
+            // UIAlertActionは選択肢を表示させるクラス
+            let cameraAction = UIAlertAction(title: "カメラ", style: .default, handler: { (action:UIAlertAction) in
+                
+                // カメラを起動
+                let imagePickerController = UIImagePickerController()
+                imagePickerController.sourceType = .camera
+                imagePickerController.delegate = self
+                self.present(imagePickerController, animated: true, completion: nil)
+            })
+            alertController.addAction(cameraAction)
+        }
         
-        // フォトライブラリを起動するための選択肢を定義
-        let photoLibraryAction = UIAlertAction(title: "フォトライブラリ", style: .default, handler: nil)
-        alertController.addAction(photoLibraryAction)
+        
+        // フォトライブラリが利用可能かどうかチェック
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            // フォトライブラリを起動するための選択肢を定義
+            let photoLibraryAction = UIAlertAction(title: "フォトライブラリ", style: .default, handler: { (action:UIAlertAction) in
+                
+                // フォトライブラリを起動
+                let imagePickerController = UIImagePickerController()
+                imagePickerController.sourceType = .photoLibrary
+                imagePickerController.delegate = self
+                self.present(imagePickerController, animated: true, completion: nil)
+            })
+            alertController.addAction(photoLibraryAction)
+        }
         
         // キャンセルの選択肢を定義
         let cancelAction = UIAlertAction(title: "キャンセル", style: .cancel, handler: nil)
