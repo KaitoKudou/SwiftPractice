@@ -34,6 +34,16 @@ class EffectViewController: UIViewController {
     // 前の画面より画像を設定
     var originalImage : UIImage?
     
+    // フィルタ名を列挙した配列(Array)
+    // 0: モノクロ  1: Chrome  2: Fade  3: Instant
+    // 4: Noir    5: Process  6: Tonal  7: Transfer  8: Sepia Tone
+    let filterArray = ["CIPhotoEffectMono", "CIPhotoEffectChrome", "CIPhotoEffectFade", "CIPhotoEffectInstant",
+                        "CIPhotoEffectNoir", "CIPhotoEffectProcess", "CIPhotoEffectTonal",
+                        "CIPhotoEffectTransfer", "CISepiaTone"]
+    
+    // 選択中のエフェクトの添字
+    var filterSelectNumber = 0
+    
     @IBOutlet weak var effectImage: UIImageView!
     
     @IBAction func effectButtonAction(_ sender: Any) {
@@ -42,7 +52,16 @@ class EffectViewController: UIViewController {
         if let image = originalImage {
         
             // フィルター名を指定
-            let filterName = "CIPhotoEffectMono"
+            let filterName = filterArray[filterSelectNumber]
+            
+            // 次に更新するエフェクトの添字に更新
+            filterSelectNumber += 1
+            
+            // 添字が配列の個数と同じかチェック
+            if filterSelectNumber == filterArray.count {
+                // 同じ場合は、最後まで選択されたので先頭に戻す
+                filterSelectNumber = 0
+            }
         
             // 元々のだ画像の回転角度を取得
             let rorate = image.imageOrientation
@@ -87,7 +106,7 @@ class EffectViewController: UIViewController {
     @IBAction func shareButtonAction(_ sender: Any) {
         
         // 表示画像をアンラップして、シェアする画像を取り出す
-        guard let shareImage = effectImage.image else {
+        guard let shareImage = effectImage.image?.resize() else {
             return
         }
         
@@ -101,7 +120,7 @@ class EffectViewController: UIViewController {
         // シェアボタンの位置を取得
         let button_locate = sender as? UIButton
          // ipadで落ちてしまう対策
-        controller.popoverPresentationController?.sourceView = button
+        controller.popoverPresentationController?.sourceView = button_locate
         
         // UIActivityViewControllerを表示
         present(controller, animated: true, completion: nil)

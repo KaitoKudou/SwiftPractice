@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C626172B23BC85610059265C /* EffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C626172A23BC85610059265C /* EffectViewController.swift */; };
+		C626172D23BDE4C80059265C /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C626172C23BDE4C80059265C /* UIImageExtension.swift */; };
 		C6676C4823B7001700D79061 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6676C4723B7001700D79061 /* AppDelegate.swift */; };
 		C6676C4A23B7001700D79061 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6676C4923B7001700D79061 /* SceneDelegate.swift */; };
 		C6676C4C23B7001700D79061 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6676C4B23B7001700D79061 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		C626172A23BC85610059265C /* EffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectViewController.swift; sourceTree = "<group>"; };
+		C626172C23BDE4C80059265C /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		C6676C4423B7001700D79061 /* MyCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6676C4723B7001700D79061 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6676C4923B7001700D79061 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				C6676C4B23B7001700D79061 /* ViewController.swift */,
 				C6676C4D23B7001700D79061 /* Main.storyboard */,
 				C626172A23BC85610059265C /* EffectViewController.swift */,
+				C626172C23BDE4C80059265C /* UIImageExtension.swift */,
 				C6676C5023B7001900D79061 /* Assets.xcassets */,
 				C6676C5223B7001900D79061 /* LaunchScreen.storyboard */,
 				C6676C5523B7001900D79061 /* Info.plist */,
@@ -144,6 +147,7 @@
 				C6676C4C23B7001700D79061 /* ViewController.swift in Sources */,
 				C626172B23BC85610059265C /* EffectViewController.swift in Sources */,
 				C6676C4823B7001700D79061 /* AppDelegate.swift in Sources */,
+				C626172D23BDE4C80059265C /* UIImageExtension.swift in Sources */,
 				C6676C4A23B7001700D79061 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
