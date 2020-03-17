@@ -10,5 +10,5 @@ import Foundation
 
 class Item {
     var title = ""
-    var url = ""
+    var link = ""
 }
