@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m5m-5u-ESV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QhL-xm-pvh">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--List View Controller-->
+        <!--一覧-->
         <scene sceneID="XhX-N6-uG2">
             <objects>
                 <tableViewController id="m5m-5u-ESV" customClass="ListViewController" customModule="MyNewsReader" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,6 +32,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="TmX-zJ-eeZ" kind="show" id="r5U-oS-zUN"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -38,10 +42,64 @@
                             <outlet property="delegate" destination="m5m-5u-ESV" id="8ka-9f-Rsv"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="一覧" id="8ul-bO-f9U"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Yz-jO-SBb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-12" y="38"/>
+            <point key="canvasLocation" x="791" y="38"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="lal-ym-wIO">
+            <objects>
+                <viewController id="TmX-zJ-eeZ" customClass="DetailViewController" customModule="MyNewsReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F6i-er-fbB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKT-j9-Qe9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bKT-j9-Qe9" firstAttribute="top" secondItem="F6i-er-fbB" secondAttribute="topMargin" constant="-88" id="43d-uj-hLK"/>
+                            <constraint firstItem="bKT-j9-Qe9" firstAttribute="centerX" secondItem="F6i-er-fbB" secondAttribute="centerX" id="O1d-Vv-Y4V"/>
+                            <constraint firstItem="bKT-j9-Qe9" firstAttribute="leading" secondItem="KPK-KX-Shr" secondAttribute="leading" id="Xm8-qX-uni"/>
+                            <constraint firstItem="bKT-j9-Qe9" firstAttribute="centerY" secondItem="F6i-er-fbB" secondAttribute="centerY" id="uYm-3b-XWe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KPK-KX-Shr"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6lr-Ll-9Sm"/>
+                    <connections>
+                        <outlet property="webView" destination="bKT-j9-Qe9" id="BQE-7L-G4s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UVG-xb-Jhy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1576.8115942028987" y="34.821428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Y9I-ZP-dac">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QhL-xm-pvh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xSN-we-qzG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="m5m-5u-ESV" kind="relationship" relationship="rootViewController" id="G4F-Jw-Q2B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HVs-YF-0Hx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13.043478260869566" y="37.5"/>
         </scene>
     </scenes>
 </document>
