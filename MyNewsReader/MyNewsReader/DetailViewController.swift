@@ -17,10 +17,10 @@ class DetailViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        /*guard let url = URL(string: self.link) else {
+        guard let url = URL(string: self.link) else {
             return
         }
         let request = URLRequest(url: url)
-        self.webView.load(request)*/
+        self.webView.load(request)
     }
 }

@@ -81,7 +81,15 @@ class ListViewController : UITableViewController, XMLParserDelegate {
         self.tableView.reloadData()
     }
     
-    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        <#code#>
-    }*/
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard let indexPath = self.tableView.indexPathForSelectedRow else {
+            return
+        }
+        let item = items[indexPath.row]
+        let controller = segue.destination as! DetailViewController
+        controller.title = item.title
+        controller.link = item.link
+        
+    }
 }
